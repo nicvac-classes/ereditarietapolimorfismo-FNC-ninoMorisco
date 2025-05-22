@@ -5,7 +5,39 @@ import java.util.Scanner;
 
 // Classe principale, con metodo main
 class Esercizio {
-    // Il programma parte con una chiamata a main().
+
+    class Persona {
+        Protected String nome;
+        Protected int eta;
+        Protected float altezza;
+        Protected String genere;
+    }
+
+    class Atleta extends Persona {
+        Protected String sport;
+        Protected String categoria;
+        Protected int anniAttivita;
+    }
+
+    class Calciatore extends Atleta {
+        Protected String piedeForte;
+        Protected String ruolo;
+        Protected int numeroMaglia;
+        Protected int presenze;
+        Protected int gol;
+        Protected int assist;
+        Protected int cartelliniGialli;
+        Protected int cartelliniRossi;
+    }
+
+    class Tennista extends Atleta {
+        Protected String manoForte;
+        Protected int matchGiocati;
+        Protected int matchVinti;
+        Protected int posizioneClassificaATP;
+        Protected String nomePersonalCoach;
+    }
+
     public static void main(String args[])
     {
         //Variabili del programma
